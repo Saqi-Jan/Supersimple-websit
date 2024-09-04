@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    width:100% ;
+    height: 60px;
+    border-bottom: 1px solid black;
+}
+.left{
+    display: flex;
+    flex-direction: row;
+}
+.left .image{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    
+}
+.left .image img{
+    width: 55px;
+}
+
+.header .left a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+}
+.header .left a:hover{
+    background-color: #04aa6d;
+    color: white;
+}
+.search{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    position: relative;
+}
+.search input[type="text"]{
+    height: 60%;
+    width: 250px;
+    border:1px solid #7a7878;
+    border-radius: 25px;
+    padding-left: 10px;
+    font-size: 1.4rem;
+    
+    
+}
+.search input[type="text"]:focus{
+    outline: none;
+    border: 2px solid #04aa6d;
+    
+}
+
+.search i{
+    position: absolute;
+    top: 20px;
+    color: #6c6b6b;
+    right: 18px;
+    z-index: 99;
+    font-size: 23px;
+    
+}
+.dark_mode{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    font-size: 1.3rem;
+}
+.dark_mode i:hover{
+    color: #04aa6d;
+    cursor: pointer;
+}
+.header .right{
+    display: flex;
+    align-items: center;
+}
+.header .right .user-anonymous{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 1.1rem;
+    height: 70%;
+    padding: 0 15px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+    border-radius: 40px;    
+}
+.header .right .user-anonymous:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.header .right a ~ .container a{
+    justify-content: right;
+    color: #000;
+}
+.header .right a ~ .container .sign_up{
+    color: #fff;
+}
+
+.sign_up{
+    height: 40px;
+    width: 90px ;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    border-radius: 40px;
+    text-decoration: none;
+    padding-right: 18px;
+    background-color: #04aa6d;
+    z-index: 99;
+}
+.container .sign_up:hover{
+    background-color: #017249;
+}
+.container{
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 180px;
+    position: relative;
+}
+.log_in{
+    height: 40px;
+    background-color: #d9eee1;
+    position: absolute;
+    width: 120px;
+    margin-right: 10px;
+    border-radius: 25px;
+    padding-right: 20px;
+    right: 0;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    font-size: 17px;
+}
+.container .log_in:hover{
+    background-color: #017249;
+    color: white;
+}
+.right a svg{
+    color: #9763f6;
+    margin-right: 7px;
+}
+@media all and (min-width=1300px){
+    .user-anonymous{
+        display: block;
+    }
+}
+
+
+
