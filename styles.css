@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.Navigation_Bar{
+background-color: #282A35;
+padding-left: 0;
+color: #fff;
+}
+.link {
+    margin: 0%;
+}
+.Navigation_Bar ul li{
+    display: inline-block;
+    padding: 8px;
+}
+.Navigation_Bar  li :link{
+    color: aliceblue;
+}
+.Navigation_Barul li :visited{
+    background-color: black;
+}
+.Navigation_Bar  li:hover{
+    color:orange;
+    background-color: white;
+    font-size: 22px;
+}
+.Navigation_Barul li :active{
+    color: brown;
+}
+.head{
+    width: 100%;
+    height:56px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.head .head-left{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo{
+    height: 100%;
+    padding: 8px 16px;
+}
+.head .logo img{
+    display: block;
+    width: 46px;
+}
+ .head .menu{
+    height: 100%;
+    font-size:17px;
+    display: flex;
+    align-items: center;
+}
+.head .menu ul{
+    height: 100%;
+    line-height: 56px;
+}
+.head .menu ul li{
+    height: 100%;
+    padding: 0 10px;
+    display: inline-block;
+}
+.head .menu ul li:hover{
+    cursor: pointer;
+    background-color: #04aa6d;
+    color: #fff;
+}
+.head .search{
+    height:100%;
+    background-color:white ;
+}
+.box{
+    height:100%;
+    position: relative;
+    border-radius:25%;
+    display: flex;
+    align-items: center;
+}
+.search_input{
+    margin-left: 15px;
+    width: 190px;
+    height: 20px;
+    font-size: 18px;
+    border-radius: 25px;
+    border: 1px solid rgba(20, 20, 20, 0.3);
+    position: relative;
+    padding: 15px 0;
+    padding-left: 15px;
+}
+.box form i{
+    position: absolute;
+    right: 8px;
+    top: 20px;
+}
+.icon{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+ width: 40%;
+ 
+}
+.icon .icon-right{
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    width: 125px;
+}
+.icon .icon-right a{
+    text-decoration: none;
+    color: #000;
+}
+.icon .icon-right a .sign{
+    position:absolute;
+    left: 1px;
+    width: 75px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 16px;
+    line-height: 40px;
+    z-index:5;
+    background-color: #04aa6d;
+    text-align: center;
+}
+.icon .icon-right a .log-in{
+    position: relative;
+    right: 1px;
+    width: 75px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 16px;
+    line-height: 40px;
+    z-index:1;
+    background-color: #74dbb5;
+    text-align: center;
+    padding: 10px;
+}
+.icon .icon-right a .log-in:hover{
+    background-color: #076b46;
+}
+.icon .icon-left{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  
+}
+.icon .icon-left a{
+    height: 40px;
+    text-decoration: none;
+    margin-left: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 25px;
+    color: #000;
+}
+.icon .icon-left a:hover{
+    background-color: rgba(30, 30, 30, 0.1);
+}
+.icon .icon-left a .plus{
+    line-height: 40px;
+}
+
+.icon .icon-left a svg{
+    margin-right: 10px;
+    color: #9763f6;
+}
